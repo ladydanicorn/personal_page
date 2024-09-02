@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #69b4e3;
+    color: #333;
+    padding-bottom: 60px; /* Add padding to body to prevent footer overlap */
+}
+
+header {
+    background-color: #e5aef674;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #35424a;
+    text-align: center; /* Center all h2 headers */
+}
+
+.profile-pic {
+    max-width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+#interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#interests ul li {
+    margin-bottom: 0.5rem;
+}
+
+.project {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.project img {
+    max-width: 50%;
+    border-radius: 5px;
+    margin-right: 1rem; /* Add space between image and text */
+}
+
+.project-content {
+    flex: 1; /* Allow content to grow and fill available space */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+button {
+    background-color: #57295a;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c363d;
+}
+
+footer {
+    background-color: #e5aef6;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .project {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .project img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
